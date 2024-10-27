@@ -36,7 +36,7 @@ A comprehensive tool for analyzing Facebook business profile reviews using AI-po
    pip install -r requirements.txt
    ```
 
-3. Create a `.env` file in the root directory and add your OpenAI API key:
+3. Add your OpenAI API key to`.env` file in the root directory:
    ```
    OPENAI_API_KEY=your_api_key_here
    ```
