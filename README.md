@@ -2,14 +2,6 @@
 
 A comprehensive tool for analyzing Facebook business profile reviews using AI-powered sentiment analysis and natural language processing. This project helps businesses understand customer feedback through automated analysis of their Facebook reviews.
 
-## 🚀 Features
-
-- Real-time Facebook reviews analysis
-- Sentiment analysis of customer feedback
-- Natural language processing insights
-- Interactive dashboard with Streamlit
-- FastAPI backend for efficient processing
-
 ## 📁 Project Structure
 
 ```
@@ -70,23 +62,3 @@ A comprehensive tool for analyzing Facebook business profile reviews using AI-po
 - Configure LLM settings in `api/config/llm_config.py`
 - Adjust prompts in `api/config/prompts.py`
 - Update token configurations in `api/config/tokens.json`
-
-## 📊 Data
-
-Review data is stored in `api/data/reviews.json`. The application processes this data to provide insights about your Facebook business profile reviews.
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🆘 Support
-
-If you encounter any issues or have questions, please open an issue in the GitHub repository.
