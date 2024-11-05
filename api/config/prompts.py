@@ -12,19 +12,23 @@ def create_review_prompt(company_name):
         
     review_texts = [f"Rating: {review['rating']}\nReview: {review['review_text']}" for review in reviews]
 
-    average_rating = sum(r['rating'] for r in reviews) / len(reviews)
+    average_rating = round(sum(r['rating'] for r in reviews) / len(reviews),2)
 
     print(average_rating)
 
     total_reviews = len(reviews)
+
+    print(company_name)
 
     # Create prompt for LLM
     review_prompt = f"""Analyze these {len(reviews)} company facebook reviews and identify the top 3 unique sentiment categories.
     For each category, determine the overall sentiment (positive/negative/neutral), 
     confidence score (0-100), common themes, and provide a representative example review.
 
+    do not change any of the following values in final output.
     Total Reviews: {total_reviews}
     Average Rating : {average_rating}
+    Company Name : {company_name}
 
     Reviews:
     {review_texts}
