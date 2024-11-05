@@ -1,9 +1,7 @@
 # Facebook Reviews Analyzer
-
 A comprehensive tool for analyzing Facebook business profile reviews using AI-powered sentiment analysis and natural language processing. This project helps businesses understand customer feedback through automated analysis of their Facebook reviews.
 
 ## 📁 Project Structure
-
 ```
 .
 ├── api
@@ -31,12 +29,26 @@ A comprehensive tool for analyzing Facebook business profile reviews using AI-po
    cd facebook-reviews-analyzer
    ```
 
-2. Install required dependencies:
+2. Create and activate a Python virtual environment:
+   
+   For Windows:
+   ```bash
+   python -m venv venv
+   venv\Scripts\activate
+   ```
+   
+   For macOS/Linux:
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
+
+3. Install required dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-3. Add your OpenAI API key to`.env` file in the root directory:
+4. Add your OpenAI API key to `.env` file in the root directory:
    ```
    OPENAI_API_KEY=your_api_key_here
    ```
@@ -58,7 +70,6 @@ A comprehensive tool for analyzing Facebook business profile reviews using AI-po
    The web interface will open automatically in your default browser
 
 ## 🔧 Configuration
-
 - Configure LLM settings in `api/config/llm_config.py`
 - Adjust prompts in `api/config/prompts.py`
 - Update token configurations in `api/config/tokens.json`
